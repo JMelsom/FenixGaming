@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.fl { float:left; }
+.fr { float:right; }
+.align-center { text-align:center; }
+.align-left { text-align:left; }
+.align-right { text-align:right; }
+.hide {
+	display:none;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	overflow:hidden;
+	color:transparent;
+	text-indent:-9999px;
+	width:0;
+}
+.clear {
+	clear:both;	
+}

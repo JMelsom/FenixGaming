@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+html, body, img, figure {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+img, object, emded {
+	max-width:100%;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}

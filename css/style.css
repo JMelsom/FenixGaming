@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image: url(../../images/background.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	overflow-style:marquee-line;
+}
+header {
+	height: 200px;
+	padding: 0;
+	background-image:url(../images/cfbg.jpg);
+	background-repeat:repeat;
+	text-align:center;
+	border-bottom:3px groove #7D7D7D;
+	border-top:3px groove #7D7D7D;
+}
+#fenixlogo {
+	height:150px;
+	width:auto;
+	margin: 25px 10% 0 0;
+}
+#titleimg {
+	width:350px;
+	height:auto;
+	margin-right:20%;
+	margin-bottom:10px;	
+}
+
+header h1 {
+	text-align: center;
+	font-family: "8BIT WONDER Nominal", "Press Start 2P";
+	font-size: 36px;
+	line-height: 4em;
+}
+nav {
+	text-align:center;
+}
+#picnav {
+	display:inline-block;
+	padding: 0;
+	width:800px;;
+	list-style:none;
+	height:60px;
+	border-radius:25px;
+}
+#picnav div {
+	font-family: "8BIT WONDER";
+	text-decoration:none;
+	display:inline-block;
+	width:200px;
+	height:55px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	transition:1s;
+	border:3px solid white;
+	line-height:3.5em;
+}
+#picnav div:hover {
+	filter: invert(100%);
+			-webkit-filter: invert(100%);
+			-moz-filter: invert(100%);
+			-o-filter: invert(100%);
+			-ms-filter: invert(100%);
+}
+#picnav #navleft {
+		border-radius:20px 0px 0px 20px;
+}
+#picnav #navright {
+		border-radius:0px 20px 20px 0px;
+}
+#gallery {
+	height:750px;
+}
+.gallerypics {
+	text-align: center;
+	position:relative;
+	margin:50px 0 0 0;
+	width:100%;
+	z-index:1;
+	padding:0;
+}
+#gallery li {
+	list-style:none;
+	float:left;
+}
+#gallery img {
+	display:block;
+	height:180px;
+	width:320px;
+	transition:0.25s;
+	-webkit-filter: grayscale(1);
+			-moz-filter: grayscale(1);
+			-o-filter: grayscale(1);
+			-ms-filter: grayscale(1);
+			z-index:1;
+}
+#gallery img:hover {
+	-webkit-filter: none;
+			-moz-filter: none;
+			-o-filter: none;
+			-ms-filter: none;
+			/*-webkit-transform: scale(1.5);
+			-moz-transform: scale(1.5);
+			-o-transform: scale(1.5);
+			-ms-transform: scale(1.5);
+			-webkit-filter: drop-shadow(10px 10px 5px black);
+			-moz-filter: drop-shadow(10px 10px 5px black);
+			-o-filter: drop-shadow(10px 10px 5px black);
+			-ms-filter: drop-shadow(10px 10px 5px black);
+			z-index:999;*/
+}
+#gallery li figure {
+	position:relative;
+	overflow:hidden;
+	height:180px;
+	width:320px;
+}
+#gallery li figure figcaption {
+	position:absolute;
+	bottom:-300px;
+	width:100%;
+	display:block;
+	background:black;
+	z-index:2;
+	color:white;
+	padding:1em;
+	transition:all 0.5s;
+	font-family:"8BIT WONDER";
+	font-size:12px;
+}
+#gallery li:hover figure figcaption {
+	bottom:0;
+}
+#gallery h1 {
+	font-family:"8BIT WONDER";
+	font-size:40px;
+	text-align:center;
+	color:black;
+	margin: 0 0 25px 0;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+}
+.active {
+	display:block;
+	visibility:visible;
+	z-index:1;
+}
+.hidden {
+	display:none;
+	visibility:hidden;
+}
+footer {
+	margin-top:25px;
+	height:50px;
+}
+
+/* Slideshow */
+#slideshow {
+	position:relative;
+	text-align: center;
+	background-color: rgba(0,0,0,0.50);
+	width: 100%;
+	height: 540px;
+}
+#slideshow ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+#slideshow #slides {
+	position:relative;
+	overflow-x:auto;
+	overflow-y:hidden;
+	height:540px;
+	width:100%;
+}
+.js #slideshow #slides {
+	overflow-x:hidden;
+}
+#slideshow #slides ul {
+	width:400%;
+	padding:0;
+	margin:0;
+}
+#slideshow #slides ul li {
+	float:left;
+	width:25%;
+	height:540px;
+	padding:0;
+	margin:0;
+}
+#slideshow #slides ul li article {
+	position:relative;;
+	overflow:hidden;
+	height:540px;
+	max-height:540px;
+	width:960px;
+}
+#slideshow #slides ul li article figure {
+	position:absolute;
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+	z-index:1;
+	width:100%;
+}
+#slideshow #slides ul li article h1 {
+	position:absolute;
+	font-size:14px;
+	font-family:"8BIT WONDER";
+	right:0;
+	display:inline-block;
+	z-index:2;
+	background-color:black;
+	color:white;
+	top:4em;
+	padding:0.5em;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.50);
+}
+#slideshow #slides ul li article p {
+	position:absolute;
+	right:0;
+	display:inline-block;
+	z-index:2;
+	background-color:black;
+	color:white;
+	bottom:0;
+	padding:1em;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.50);
+	font-family:"8BIT WONDER";
+	font-size:12px;
+	margin:0;
+}
+#slideshow #slideshow ul li article figure .slideshowss {
+	min-width:100%;
+	min-height:100%;
+}
+#leftarrow {
+	position:absolute;
+	left:3em;
+	height:75px;
+	width:auto;
+	top:45%;
+	margin-left:75px;
+}
+#rightarrow {
+	position:absolute;
+	height:75px;
+	width:auto;
+	right:3em;
+	top:45%;
+	margin-right:75px;
+}
+#leftarrow img {
+	height:75px;
+	width:75px;
+}
+#rightarrow img {
+	height:75px;
+	width:75px;
+}
+#slideshowdots {
+	width:100%;
+	text-align: center;
+}
+.slidedot {
+	display:inline-block;
+	text-align:center;
+	margin:30px;
+	height:30px;
+	width:30px;
+	background:black;
+	border: 3px solid white;
+	border-radius:50px;
+	transition:1s;
+}
+.slidedot:hover, #leftarrow img:hover, #rightarrow img:hover {
+	filter: invert(100%);
+			-webkit-filter: invert(100%);
+			-moz-filter: invert(100%);
+			-o-filter: invert(100%);
+			-ms-filter: invert(100%);
+}
+.slidedot a {
+	display:block;
+	height:30px;
+	width:26px;
+	border-radius:50px;
+	color:white;
+	font-family:"8BIT WONDER";
+	text-decoration:none;
+	font-size:12px;
+	margin:0;
+	padding:2px 0 0 0;
+}
+.activeslide {
+	filter: invert(100%);
+			-webkit-filter: invert(100%);
+			-moz-filter: invert(100%);
+			-o-filter: invert(100%);
+			-ms-filter: invert(100%);
+}
+
+/* Shadow Box */
+
+#fabbox {
+	display:table;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.60);
+	top:0;
+	left:0;
+	z-index:9999;
+	overflow:auto;
+}
+#fabbox #close {
+	position:absolute;
+	right:1em;
+	top:1em;
+	width:75px;
+	height:75px;
+	background-image:url(../images/closeButton.png);
+	background-size:75px;
+	display:block;
+	text-align:center;
+	opacity:0.8;
+	transition:all 1s;
+}
+
+#fabbox #close:hover {
+	filter: invert(100%);
+			-webkit-filter: invert(100%);
+			-moz-filter: invert(100%);
+			-o-filter: invert(100%);
+			-ms-filter: invert(100%);
+}
+
+#fabbox #next, #fabbox #prev {
+	position:absolute;
+	top:50%;
+	width:117px;
+	text-align:center;
+	line-height:6em;
+	height:117px;
+	transition:all 1s;
+}
+
+#fabbox #next:hover, #fabbox #prev:hover {
+	filter: invert(100%);
+			-webkit-filter: invert(100%);
+			-moz-filter: invert(100%);
+			-o-filter: invert(100%);
+			-ms-filter: invert(100%);
+}
+#fabbox #next {
+	right:3em;
+	background-image:url(../images/arrowRight.png);
+	background-size:75px;
+	height:75px;
+	width:75px;
+}
+#fabbox #prev {
+	left:3em;
+	background-image:url(../images/arrowLeft.png);
+	background-size:75px;
+	height:75px;
+	width:75px;
+}
+#fabbox #image {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+#fabbox #image img {
+	max-width:75%;
+	max-height:75%;
+}
